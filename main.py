@@ -10,3 +10,7 @@ def add_numbers(a, b):
 # Main function
 def main():
     print("=== Python Project Started ===")
+
+ # Take user input
+    name = input("Enter your name: ")
+    greet(name)   

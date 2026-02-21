@@ -6,3 +6,7 @@ def greet(name):
 # Function to add two numbers
 def add_numbers(a, b):
     return a + b
+
+# Main function
+def main():
+    print("=== Python Project Started ===")

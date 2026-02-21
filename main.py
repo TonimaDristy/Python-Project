@@ -24,3 +24,7 @@ def main():
     print("Sum is:", result)
 
     print("=== Program Finished ===")   
+
+  # Run main function
+if __name__ == "__main__":
+    main()  

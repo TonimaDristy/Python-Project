@@ -73,3 +73,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def check_password(password):
+    if password == "python123":
+        return True
+    else:
+        return False
+
+def main():
+    print("=== Login System ===")
+
+    password = input("Enter password: ")
+
+    if check_password(password):
+        print("Login successful")
+    else:
+        print("Wrong password")
+
+if __name__ == "__main__":
+    main()    

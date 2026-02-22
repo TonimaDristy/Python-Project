@@ -54,3 +54,22 @@ def main():
 
 if __name__ == "__main__":
     main()   
+
+
+
+    def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+def main():
+    print("=== Even or Odd Checker ===")
+
+    num = int(input("Enter a number: "))
+    result = check_even_odd(num)
+
+    print("The number is:", result)
+
+if __name__ == "__main__":
+    main()

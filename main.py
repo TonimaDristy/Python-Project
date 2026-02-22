@@ -92,4 +92,27 @@ def main():
         print("Wrong password")
 
 if __name__ == "__main__":
-    main()    
+    main()
+
+
+ def add_item(item_list, item):
+    item_list.append(item)
+
+def show_items(item_list):
+    print("Your items:")
+    for item in item_list:
+        print("-", item)
+
+def main():
+    print("=== List Manager ===")
+
+    items = []
+
+    for i in range(3):
+        item = input("Enter item: ")
+        add_item(items, item)
+
+    show_items(items)
+
+if __name__ == "__main__":
+    main()       

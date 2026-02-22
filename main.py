@@ -28,3 +28,29 @@ def main():
   # Run main function
 if __name__ == "__main__":
     main()  
+
+ def calculate_grade(marks):
+    if marks >= 80:
+        return "A+"
+    elif marks >= 70:
+        return "A"
+    elif marks >= 60:
+        return "A-"
+    elif marks >= 50:
+        return "B"
+    else:
+        return "Fail"
+
+def main():
+    print("=== Grade Calculator ===")
+
+    name = input("Enter student name: ")
+    marks = int(input("Enter marks: "))
+
+    grade = calculate_grade(marks)
+
+    print("Student:", name)
+    print("Grade:", grade)
+
+if __name__ == "__main__":
+    main()   

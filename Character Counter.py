@@ -62,3 +62,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def generate_username(first, last):
+    return first.lower() + "_" + last.lower()
+
+def main():
+    print("=== Username Generator ===")
+
+    first = input("Enter first name: ")
+    last = input("Enter last name: ")
+
+    username = generate_username(first, last)
+
+    print("Generated username:", username)
+
+if __name__ == "__main__":
+    main()

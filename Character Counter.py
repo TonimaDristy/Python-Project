@@ -11,3 +11,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def is_palindrome(text):
+    text = text.lower()
+    return text == text[::-1]
+
+def main():
+    print("=== Palindrome Checker ===")
+
+    word = input("Enter a word: ")
+
+    if is_palindrome(word):
+        print("It is a palindrome")
+    else:
+        print("Not a palindrome")
+
+if __name__ == "__main__":
+    main()

@@ -79,3 +79,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def calculate_total(prices):
+    return sum(prices)
+
+def main():
+    print("=== Shopping Calculator ===")
+
+    prices = []
+
+    for i in range(3):
+        price = float(input("Enter price: "))
+        prices.append(price)
+
+    total = calculate_total(prices)
+
+    print("Total price:", total)
+
+if __name__ == "__main__":
+    main()

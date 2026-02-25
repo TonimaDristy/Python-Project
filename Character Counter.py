@@ -117,3 +117,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def reverse_text(text):
+    return text[::-1]
+
+def main():
+    print("=== Reverse Text ===")
+
+    text = input("Enter text: ")
+
+    reversed_text = reverse_text(text)
+
+    print("Reversed:", reversed_text)
+
+if __name__ == "__main__":
+    main()

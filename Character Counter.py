@@ -44,3 +44,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def find_max(numbers):
+    return max(numbers)
+
+def main():
+    print("=== Maximum Finder ===")
+
+    nums = []
+
+    for i in range(3):
+        num = int(input("Enter number: "))
+        nums.append(num)
+
+    print("Maximum number is:", find_max(nums))
+
+if __name__ == "__main__":
+    main()

@@ -87,3 +87,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def check_login(correct_password):
+    attempts = 3
+
+    while attempts > 0:
+        password = input("Enter password: ")
+
+        if password == correct_password:
+            return True
+        else:
+            attempts -= 1
+            print("Wrong password. Attempts left:", attempts)
+
+    return False
+
+def main():
+    print("=== Login System ===")
+
+    if check_login("admin123"):
+        print("Access granted")
+    else:
+        print("Access denied")
+
+if __name__ == "__main__":
+    main()

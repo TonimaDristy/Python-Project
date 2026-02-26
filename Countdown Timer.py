@@ -54,3 +54,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def save_contact(name, phone):
+    with open("contacts.txt", "a") as file:
+        file.write(name + " - " + phone + "\n")
+
+def main():
+    print("=== Contact Saver ===")
+
+    name = input("Enter name: ")
+    phone = input("Enter phone: ")
+
+    save_contact(name, phone)
+
+    print("Contact saved successfully.")
+
+if __name__ == "__main__":
+    main()

@@ -16,3 +16,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def calculate_age(current_year, birth_year):
+    return current_year - birth_year
+
+def main():
+    print("=== Age Calculator ===")
+
+    current_year = int(input("Enter current year: "))
+    birth_year = int(input("Enter your birth year: "))
+
+    age = calculate_age(current_year, birth_year)
+
+    print("Your age is:", age)
+
+if __name__ == "__main__":
+    main()

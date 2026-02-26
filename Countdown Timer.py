@@ -111,3 +111,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def calculate_sum(n):
+    total = 0
+
+    for i in range(1, n + 1):
+        total += i
+
+    return total
+
+def main():
+    print("=== Sum Calculator ===")
+
+    num = int(input("Enter number: "))
+
+    result = calculate_sum(num)
+
+    print("Sum from 1 to", num, "is:", result)
+
+if __name__ == "__main__":
+    main()

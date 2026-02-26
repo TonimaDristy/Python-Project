@@ -32,3 +32,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for char in text:
+        if char in vowels:
+            count += 1
+
+    return count
+
+def main():
+    print("=== Vowel Counter ===")
+
+    text = input("Enter text: ")
+
+    total = count_vowels(text)
+
+    print("Number of vowels:", total)
+
+if __name__ == "__main__":
+    main()

@@ -71,3 +71,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def square(number):
+    return number * number
+
+def main():
+    print("=== Square Calculator ===")
+
+    num = int(input("Enter number: "))
+
+    result = square(num)
+
+    print("Square is:", result)
+
+if __name__ == "__main__":
+    main()

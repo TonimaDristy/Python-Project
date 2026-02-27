@@ -81,3 +81,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    def is_armstrong(number):
+    num_str = str(number)
+    power = len(num_str)
+    total = 0
+
+    for digit in num_str:
+        total += int(digit) ** power
+
+    return total == number
+
+def main():
+    print("=== Armstrong Number Checker ===")
+
+    num = int(input("Enter number: "))
+
+    if is_armstrong(num):
+        print("It is an Armstrong number")
+    else:
+        print("Not an Armstrong number")
+
+if __name__ == "__main__":
+    main()

@@ -105,3 +105,36 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def add_expense(expenses, amount):
+    expenses.append(amount)
+
+def show_total(expenses):
+    print("Total expenses:", sum(expenses))
+
+def main():
+    expenses = []
+
+    while True:
+        print("\n=== Expense Tracker ===")
+        print("1. Add Expense")
+        print("2. Show Total")
+        print("3. Exit")
+
+        choice = input("Enter choice: ")
+
+        if choice == "1":
+            amount = float(input("Enter expense amount: "))
+            add_expense(expenses, amount)
+
+        elif choice == "2":
+            show_total(expenses)
+
+        elif choice == "3":
+            break
+
+        else:
+            print("Invalid choice")
+
+if __name__ == "__main__":
+    main()

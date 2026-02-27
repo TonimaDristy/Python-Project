@@ -178,3 +178,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    import math
+
+def main():
+    num = float(input("Enter a number: "))
+    print("Square root is:", math.sqrt(num))
+
+if __name__ == "__main__":
+    main()

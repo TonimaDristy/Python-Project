@@ -48,3 +48,36 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def calculate(a, b, operator):
+    if operator == "+":
+        return a + b
+    elif operator == "-":
+        return a - b
+    elif operator == "*":
+        return a * b
+    elif operator == "/":
+        if b != 0:
+            return a / b
+        else:
+            return "Cannot divide by zero"
+    else:
+        return "Invalid operator"
+
+def main():
+    print("=== Calculator ===")
+
+    while True:
+        a = float(input("Enter first number: "))
+        operator = input("Enter operator (+, -, *, /): ")
+        b = float(input("Enter second number: "))
+
+        result = calculate(a, b, operator)
+        print("Result:", result)
+
+        again = input("Do you want to continue? (yes/no): ")
+        if again.lower() != "yes":
+            break
+
+if __name__ == "__main__":
+    main()

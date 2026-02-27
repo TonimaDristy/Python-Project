@@ -168,3 +168,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def list_length(items):
+    return len(items)
+
+def main():
+    items = input("Enter items separated by space: ").split()
+    print("Total items:", list_length(items))
+
+if __name__ == "__main__":
+    main()

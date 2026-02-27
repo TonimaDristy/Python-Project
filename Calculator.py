@@ -183,7 +183,17 @@ if __name__ == "__main__":
 
 def main():
     num = float(input("Enter a number: "))
-    print("Square root is:", math.sqrt(num))
+    print("\ is:", math.sqrt(num))
+
+if __name__ == "__main__":
+    main()
+
+    def count_digits(number):
+    return len(str(abs(number)))
+
+def main():
+    num = int(input("Enter a number: "))
+    print("Total digits:", count_digits(num))
 
 if __name__ == "__main__":
     main()

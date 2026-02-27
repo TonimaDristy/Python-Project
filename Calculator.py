@@ -153,3 +153,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def greet(hour):
+    if hour < 12:
+        return "Good Morning"
+    elif hour < 18:
+        return "Good Afternoon"
+    else:
+        return "Good Evening"
+
+def main():
+    hour = int(input("Enter current hour (0-23): "))
+    print(greet(hour))
+
+if __name__ == "__main__":
+    main()

@@ -37,3 +37,14 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    char = input("Enter a character: ").lower()
+
+    if char in "aeiou":
+        print("It is a vowel")
+    else:
+        print("It is a consonant")
+
+if __name__ == "__main__":
+    main()

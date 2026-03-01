@@ -28,3 +28,18 @@ def main():
 
 if __name__ == "__main__":
     main()    
+
+ def calculate_discount(price, discount_percent):
+    discount = price * discount_percent / 100
+    return price - discount
+
+def main():
+    price = float(input("Enter price: "))
+    discount = float(input("Enter discount %: "))
+
+    final_price = calculate_discount(price, discount)
+
+    print("Final price after discount:", final_price)
+
+if __name__ == "__main__":
+    main()   

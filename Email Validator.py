@@ -53,3 +53,14 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    num = int(input("Enter starting number: "))
+
+    for i in range(num, 0, -1):
+        print(i)
+
+    print("Done!")
+
+if __name__ == "__main__":
+    main()

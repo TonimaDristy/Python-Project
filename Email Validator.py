@@ -43,3 +43,13 @@ def main():
 
 if __name__ == "__main__":
     main()   
+
+    def main():
+    numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+    evens = [num for num in numbers if num % 2 == 0]
+
+    print("Even numbers:", evens)
+
+if __name__ == "__main__":
+    main()

@@ -15,3 +15,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def sum_of_digits(number):
+    total = 0
+    for digit in str(abs(number)):
+        total += int(digit)
+    return total
+
+def main():
+    num = int(input("Enter a number: "))
+    print("Sum of digits:", sum_of_digits(num))
+
+if __name__ == "__main__":
+    main()    

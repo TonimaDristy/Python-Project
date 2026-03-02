@@ -91,3 +91,15 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    principal = float(input("Enter principal: "))
+    rate = float(input("Enter rate (%): "))
+    time = float(input("Enter time (years): "))
+
+    interest = (principal * rate * time) / 100
+    total_amount = principal + interest
+
+    print("Total amount:", total_amount)
+
+if __name__ == "__main__":
+    main()

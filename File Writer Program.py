@@ -35,3 +35,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    char = input("Enter a character: ")
+
+    if char.isalpha():
+        print("It is an alphabet")
+    else:
+        print("It is not an alphabet")
+
+if __name__ == "__main__":
+    main()

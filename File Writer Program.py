@@ -80,3 +80,14 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    num = int(input("Enter a number: "))
+
+    if num % 3 == 0 and num % 7 == 0:
+        print("Divisible by both 3 and 7")
+    else:
+        print("Not divisible by both")
+
+if __name__ == "__main__":
+    main()

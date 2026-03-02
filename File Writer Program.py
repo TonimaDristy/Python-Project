@@ -59,3 +59,14 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    base = float(input("Enter base: "))
+    exponent = float(input("Enter exponent: "))
+
+    result = base ** exponent
+
+    print("Result:", result)
+
+if __name__ == "__main__":
+    main()

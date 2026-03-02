@@ -14,3 +14,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def main():
+    num = int(input("Enter a number: "))
+
+    if num % 5 == 0:
+        print("It is a multiple of 5")
+    else:
+        print("Not a multiple of 5")
+
+if __name__ == "__main__":
+    main()

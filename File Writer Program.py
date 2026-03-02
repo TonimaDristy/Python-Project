@@ -115,3 +115,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+    smallest = min(numbers)
+
+    print("Smallest number:", smallest)
+
+if __name__ == "__main__":
+    main()

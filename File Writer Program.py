@@ -103,3 +103,15 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    text = input("Enter text: ")
+    count = 0
+
+    for char in text:
+        if char.isupper():
+            count += 1
+
+    print("Uppercase letters:", count)
+
+if __name__ == "__main__":
+    main()

@@ -45,3 +45,17 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    text = input("Enter text: ").lower()
+    vowels = "aeiou"
+    count = 0
+
+    for char in text:
+        if char.isalpha() and char not in vowels:
+            count += 1
+
+    print("Number of consonants:", count)
+
+if __name__ == "__main__":
+    main()

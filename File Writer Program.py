@@ -125,3 +125,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    num = int(input("Enter a number: "))
+
+    if num > 0 and num % 2 == 0:
+        print("Number is positive and even")
+    else:
+        print("Condition not satisfied")
+
+if __name__ == "__main__":
+    main()

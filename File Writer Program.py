@@ -145,3 +145,12 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    print("Numbers divisible by 4 from 1 to 50:")
+
+    for i in range(1, 51):
+        if i % 4 == 0:
+            print(i)
+
+if __name__ == "__main__":
+    main()

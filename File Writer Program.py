@@ -135,3 +135,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    marks = float(input("Enter marks: "))
+
+    if marks >= 40:
+        print("Pass")
+    else:
+        print("Fail")
+
+if __name__ == "__main__":
+    main()

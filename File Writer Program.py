@@ -154,3 +154,12 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    import math
+
+def main():
+    radius = float(input("Enter radius: "))
+    area = math.pi * radius * radius
+    print("Area of circle:", area)
+
+if __name__ == "__main__":
+    main()

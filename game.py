@@ -22,3 +22,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    import math
+
+def main():
+    num = int(input("Enter a number: "))
+
+    root = math.isqrt(num)
+
+    if root * root == num:
+        print("It is a perfect square")
+   

@@ -41,3 +41,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def main():
+    numbers = list(map(float, input("Enter numbers separated by space: ").split()))
+
+    average = sum(numbers) / len(numbers)
+
+    print("Average:", average)
+
+if __name__ == "__main__":
+    main()

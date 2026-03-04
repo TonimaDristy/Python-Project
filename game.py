@@ -32,4 +32,12 @@ def main():
 
     if root * root == num:
         print("It is a perfect square")
-   
+   def main():
+    numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+    unique_numbers = list(set(numbers))
+
+    print("After removing duplicates:", unique_numbers)
+
+if __name__ == "__main__":
+    main()

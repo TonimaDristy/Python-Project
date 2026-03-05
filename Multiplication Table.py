@@ -56,3 +56,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    usd = float(input("Enter amount in USD: "))
+    rate = 110  # example rate
+
+    bdt = usd * rate
+
+    print("Amount in BDT:", bdt)
+
+if __name__ == "__main__":
+    main()

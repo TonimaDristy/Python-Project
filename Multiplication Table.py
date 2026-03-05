@@ -66,3 +66,13 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     main()
+    def main():
+    text = input("Enter text: ")
+    char = input("Enter character to count: ")
+
+    count = text.count(char)
+
+    print("Frequency:", count)
+
+if __name__ == "__main__":
+    main()

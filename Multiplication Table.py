@@ -11,3 +11,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def main():
+    text = input("Enter text: ")
+
+    words = len(text.split())
+    characters = len(text)
+
+    print("Total words:", words)
+    print("Total characters:", characters)
+
+if __name__ == "__main__":
+    main()

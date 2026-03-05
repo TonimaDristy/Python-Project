@@ -43,3 +43,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def main():
+    numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+    unique_numbers = list(set(numbers))
+    unique_numbers.sort()
+
+    if len(unique_numbers) >= 2:
+        print("Second largest:", unique_numbers[-2])
+    else:
+        print("Not enough numbers")
+
+if __name__ == "__main__":
+    main()

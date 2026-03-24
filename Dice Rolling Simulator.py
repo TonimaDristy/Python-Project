@@ -1,12 +1,22 @@
-import random
-
-colors = ["Red", "Blue", "Green", "Yellow", "Purple"]
-
 while True:
-    input("Press Enter to pick a random color...")
-    
-    print("Color:", random.choice(colors))
+    num1 = float(input("Enter first number: "))
+    op = input("Enter operator (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
 
-    again = input("Pick again? (y/n): ")
+    if op == "+":
+        print("Result:", num1 + num2)
+    elif op == "-":
+        print("Result:", num1 - num2)
+    elif op == "*":
+        print("Result:", num1 * num2)
+    elif op == "/":
+        if num2 != 0:
+            print("Result:", num1 / num2)
+        else:
+            print("Cannot divide by zero")
+    else:
+        print("Invalid operator")
+
+    again = input("Calculate again? (y/n): ")
     if again.lower() != "y":
         break

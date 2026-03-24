@@ -1,10 +1,15 @@
 import random
 
 while True:
-    input("Press Enter to roll the dice...")
-    number = random.randint(1, 6)
-    print("You rolled:", number)
+    number = random.randint(1, 10)
+    
+    guess = int(input("Guess a number (1-10): "))
+    
+    if guess == number:
+        print("Correct!")
+    else:
+        print("Wrong! The number was:", number)
 
-    again = input("Roll again? (y/n): ")
+    again = input("Play again? (y/n): ")
     if again.lower() != "y":
         break

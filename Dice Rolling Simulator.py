@@ -1,22 +1,16 @@
+import random
+
+jokes = [
+    "Why did the computer crash? It had a bad driver.",
+    "Why do programmers prefer dark mode? Less light, fewer bugs.",
+    "Why did Python go to school? To improve its class."
+]
+
 while True:
-    num1 = float(input("Enter first number: "))
-    op = input("Enter operator (+, -, *, /): ")
-    num2 = float(input("Enter second number: "))
+    input("Press Enter to get a joke...")
+    
+    print(random.choice(jokes))
 
-    if op == "+":
-        print("Result:", num1 + num2)
-    elif op == "-":
-        print("Result:", num1 - num2)
-    elif op == "*":
-        print("Result:", num1 * num2)
-    elif op == "/":
-        if num2 != 0:
-            print("Result:", num1 / num2)
-        else:
-            print("Cannot divide by zero")
-    else:
-        print("Invalid operator")
-
-    again = input("Calculate again? (y/n): ")
+    again = input("Another joke? (y/n): ")
     if again.lower() != "y":
         break

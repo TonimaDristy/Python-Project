@@ -1,26 +1,14 @@
-def kg_to_pounds(kg):
-    return kg * 2.20462
-
-def pounds_to_kg(lb):
-    return lb / 2.20462
+def calculate_si(p, r, t):
+    return (p * r * t) / 100
 
 def main():
-    print("=== Weight Converter ===")
-    print("1. KG to Pounds")
-    print("2. Pounds to KG")
+    print("=== Simple Interest Calculator ===")
 
-    choice = input("Enter choice: ")
+    p = float(input("Enter principal: "))
+    r = float(input("Enter rate (%): "))
+    t = float(input("Enter time (years): "))
 
-    if choice == "1":
-        kg = float(input("Enter kg: "))
-        print("Pounds:", kg_to_pounds(kg))
-
-    elif choice == "2":
-        lb = float(input("Enter pounds: "))
-        print("KG:", pounds_to_kg(lb))
-
-    else:
-        print("Invalid choice")
+    print("Simple Interest:", calculate_si(p, r, t))
 
 if __name__ == "__main__":
     main()

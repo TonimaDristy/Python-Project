@@ -1,24 +1,23 @@
-def celsius_to_fahrenheit(c):
-    return (c * 9/5) + 32
+def meters_to_km(m):
+    return m / 1000
 
-def fahrenheit_to_celsius(f):
-    return (f - 32) * 5/9
+def km_to_meters(km):
+    return km * 1000
 
 def main():
-    print("=== Temperature Converter ===")
-
-    print("1. Celsius to Fahrenheit")
-    print("2. Fahrenheit to Celsius")
+    print("=== Length Converter ===")
+    print("1. Meters to Kilometers")
+    print("2. Kilometers to Meters")
 
     choice = input("Enter choice: ")
 
     if choice == "1":
-        c = float(input("Enter Celsius: "))
-        print("Fahrenheit:", celsius_to_fahrenheit(c))
+        m = float(input("Enter meters: "))
+        print("Kilometers:", meters_to_km(m))
 
     elif choice == "2":
-        f = float(input("Enter Fahrenheit: "))
-        print("Celsius:", fahrenheit_to_celsius(f))
+        km = float(input("Enter kilometers: "))
+        print("Meters:", km_to_meters(km))
 
     else:
         print("Invalid choice")

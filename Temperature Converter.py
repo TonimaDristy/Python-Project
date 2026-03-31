@@ -1,23 +1,23 @@
-def meters_to_km(m):
-    return m / 1000
+def kg_to_pounds(kg):
+    return kg * 2.20462
 
-def km_to_meters(km):
-    return km * 1000
+def pounds_to_kg(lb):
+    return lb / 2.20462
 
 def main():
-    print("=== Length Converter ===")
-    print("1. Meters to Kilometers")
-    print("2. Kilometers to Meters")
+    print("=== Weight Converter ===")
+    print("1. KG to Pounds")
+    print("2. Pounds to KG")
 
     choice = input("Enter choice: ")
 
     if choice == "1":
-        m = float(input("Enter meters: "))
-        print("Kilometers:", meters_to_km(m))
+        kg = float(input("Enter kg: "))
+        print("Pounds:", kg_to_pounds(kg))
 
     elif choice == "2":
-        km = float(input("Enter kilometers: "))
-        print("Meters:", km_to_meters(km))
+        lb = float(input("Enter pounds: "))
+        print("KG:", pounds_to_kg(lb))
 
     else:
         print("Invalid choice")

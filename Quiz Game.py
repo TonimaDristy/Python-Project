@@ -1,13 +1,13 @@
 def ask_question():
-    print("What is the capital of France?")
+    print("Is Python a programming language? (yes/no)")
     answer = input("Enter answer: ")
 
-    if answer.lower() == "paris":
+    if answer.lower() == "yes":
         return True
     return False
 
 def main():
-    print("=== Quiz Game ===")
+    print("=== Yes/No Quiz ===")
 
     score = 0
 

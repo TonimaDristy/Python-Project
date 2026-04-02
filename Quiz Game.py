@@ -1,13 +1,13 @@
 def ask_question():
-    print("Is Python a programming language? (yes/no)")
+    print("Which country is known as the Land of the Rising Sun?")
     answer = input("Enter answer: ")
 
-    if answer.lower() == "yes":
+    if answer.lower() == "japan":
         return True
     return False
 
 def main():
-    print("=== Yes/No Quiz ===")
+    print("=== Country Quiz ===")
 
     score = 0
 

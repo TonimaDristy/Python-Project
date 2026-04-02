@@ -1,27 +1,26 @@
-def ask_questions():
-    questions = [
-        ("Capital of Germany?", "berlin"),
-        ("5 * 6 = ?", "30"),
-        ("Color of the sky?", "blue")
-    ]
+def ask_question():
+    correct_answer = "python"
+    attempts = 3
 
-    score = 0
+    while attempts > 0:
+        answer = input("Which language are you coding in? ").lower()
 
-    for q, ans in questions:
-        user = input(q + " ").strip().lower()
-        if user == ans:
-            print("Correct!")
-            score += 1
-        else:
-            print("Wrong! Correct answer:", ans)
+        if answer == correct_answer:
+            return True
 
-    return score
+        attempts -= 1
+        print(f"Wrong! Attempts left: {attempts}")
+
+    return False
 
 
 def main():
-    print("=== Multi Question Quiz ===")
-    score = ask_questions()
-    print(f"Final Score: {score}/3")
+    print("=== Attempt Based Quiz ===")
+
+    if ask_question():
+        print("Correct!")
+    else:
+        print("Out of attempts!")
 
 
 if __name__ == "__main__":

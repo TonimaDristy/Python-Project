@@ -1,13 +1,13 @@
 def ask_question():
-    print("What gas do plants absorb from the atmosphere?")
+    print("What does CPU stand for?")
     answer = input("Enter answer: ")
 
-    if answer.lower() == "carbon dioxide":
+    if answer.lower() == "central processing unit":
         return True
     return False
 
 def main():
-    print("=== Science Quiz ===")
+    print("=== Computer Quiz ===")
 
     score = 0
 

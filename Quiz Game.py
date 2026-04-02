@@ -1,13 +1,13 @@
 def ask_question():
-    print("Which country is known as the Land of the Rising Sun?")
+    print("What gas do plants absorb from the atmosphere?")
     answer = input("Enter answer: ")
 
-    if answer.lower() == "japan":
+    if answer.lower() == "carbon dioxide":
         return True
     return False
 
 def main():
-    print("=== Country Quiz ===")
+    print("=== Science Quiz ===")
 
     score = 0
 

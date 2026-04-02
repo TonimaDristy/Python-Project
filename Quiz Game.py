@@ -1,23 +1,28 @@
-def ask_question():
-    print("What does CPU stand for?")
-    answer = input("Enter answer: ")
-
-    if answer.lower() == "central processing unit":
-        return True
-    return False
-
-def main():
-    print("=== Computer Quiz ===")
+def ask_questions():
+    questions = [
+        ("Capital of Germany?", "berlin"),
+        ("5 * 6 = ?", "30"),
+        ("Color of the sky?", "blue")
+    ]
 
     score = 0
 
-    if ask_question():
-        print("Correct!")
-        score += 1
-    else:
-        print("Wrong!")
+    for q, ans in questions:
+        user = input(q + " ").strip().lower()
+        if user == ans:
+            print("Correct!")
+            score += 1
+        else:
+            print("Wrong! Correct answer:", ans)
 
-    print("Your score:", score)
+    return score
+
+
+def main():
+    print("=== Multi Question Quiz ===")
+    score = ask_questions()
+    print(f"Final Score: {score}/3")
+
 
 if __name__ == "__main__":
     main()

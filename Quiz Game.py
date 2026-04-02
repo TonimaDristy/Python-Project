@@ -1,34 +1,27 @@
-def ask_questions():
-    questions = {
-        "2 + 2": "4",
-        "3 + 5": "8",
-        "10 - 4": "6"
-    }
+import time
 
-    score = 0
+def ask_question():
+    print("You have 5 seconds!")
+    start = time.time()
 
-    for q, ans in questions.items():
-        user = input(q + " = ")
-        if user == ans:
-            score += 1
+    answer = input("What is 10 + 5? ")
 
-    return score, len(questions)
+    end = time.time()
+
+    if end - start > 5:
+        print("Time's up!")
+        return False
+
+    return answer == "15"
 
 
 def main():
-    print("=== Graded Quiz ===")
+    print("=== Timed Quiz ===")
 
-    score, total = ask_questions()
-    percent = (score / total) * 100
-
-    print(f"Score: {score}/{total} ({percent:.2f}%)")
-
-    if percent >= 80:
-        print("Grade: A")
-    elif percent >= 50:
-        print("Grade: B")
+    if ask_question():
+        print("Correct!")
     else:
-        print("Grade: C")
+        print("Wrong!")
 
 
 if __name__ == "__main__":

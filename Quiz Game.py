@@ -1,26 +1,34 @@
-def ask_question():
-    correct_answer = "python"
-    attempts = 3
+def ask_questions():
+    questions = {
+        "2 + 2": "4",
+        "3 + 5": "8",
+        "10 - 4": "6"
+    }
 
-    while attempts > 0:
-        answer = input("Which language are you coding in? ").lower()
+    score = 0
 
-        if answer == correct_answer:
-            return True
+    for q, ans in questions.items():
+        user = input(q + " = ")
+        if user == ans:
+            score += 1
 
-        attempts -= 1
-        print(f"Wrong! Attempts left: {attempts}")
-
-    return False
+    return score, len(questions)
 
 
 def main():
-    print("=== Attempt Based Quiz ===")
+    print("=== Graded Quiz ===")
 
-    if ask_question():
-        print("Correct!")
+    score, total = ask_questions()
+    percent = (score / total) * 100
+
+    print(f"Score: {score}/{total} ({percent:.2f}%)")
+
+    if percent >= 80:
+        print("Grade: A")
+    elif percent >= 50:
+        print("Grade: B")
     else:
-        print("Out of attempts!")
+        print("Grade: C")
 
 
 if __name__ == "__main__":

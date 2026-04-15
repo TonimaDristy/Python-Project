@@ -1,13 +1,11 @@
-import math
+def circle_perimeter(r):
+    return 2 * 3.1416 * r
 
-def circle_area(r):
-    return math.pi * r * r
-
-def rectangle_area(l, w):
-    return l * w
+def rectangle_perimeter(l, w):
+    return 2 * (l + w)
 
 def main():
-    print("=== Area Calculator ===")
+    print("=== Perimeter Calculator ===")
     print("1. Circle")
     print("2. Rectangle")
 
@@ -15,15 +13,14 @@ def main():
 
     if choice == "1":
         r = float(input("Enter radius: "))
-        print("Area:", circle_area(r))
+        print("Perimeter:", circle_perimeter(r))
 
     elif choice == "2":
         l = float(input("Enter length: "))
         w = float(input("Enter width: "))
-        print("Area:", rectangle_area(l, w))
+        print("Perimeter:", rectangle_perimeter(l, w))
 
     else:
         print("Invalid choice")
 
-if __name__ == "__main__":
-    main()
+main()

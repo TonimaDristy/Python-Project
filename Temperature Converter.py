@@ -1,26 +1,18 @@
-def circle_perimeter(r):
-    return 2 * 3.1416 * r
+def c_to_f(c):
+    return (c * 9/5) + 32
 
-def rectangle_perimeter(l, w):
-    return 2 * (l + w)
+def f_to_c(f):
+    return (f - 32) * 5/9
 
-def main():
-    print("=== Perimeter Calculator ===")
-    print("1. Circle")
-    print("2. Rectangle")
+print("1. C to F")
+print("2. F to C")
 
-    choice = input("Enter choice: ")
+choice = input("Choice: ")
 
-    if choice == "1":
-        r = float(input("Enter radius: "))
-        print("Perimeter:", circle_perimeter(r))
+if choice == "1":
+    c = float(input("Celsius: "))
+    print("Fahrenheit:", c_to_f(c))
 
-    elif choice == "2":
-        l = float(input("Enter length: "))
-        w = float(input("Enter width: "))
-        print("Perimeter:", rectangle_perimeter(l, w))
-
-    else:
-        print("Invalid choice")
-
-main()
+elif choice == "2":
+    f = float(input("Fahrenheit: "))
+    print("Celsius:", f_to_c(f))

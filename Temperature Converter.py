@@ -1,9 +1,8 @@
-def count_vowels(text):
-    count = 0
-    for ch in text.lower():
-        if ch in "aeiou":
-            count += 1
-    return count
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
 
-text = input("Enter text: ")
-print("Vowels:", count_vowels(text))
+num = int(input("Enter number: "))
+print("Factorial:", factorial(num))

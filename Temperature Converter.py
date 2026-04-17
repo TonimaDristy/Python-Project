@@ -1,8 +1,9 @@
-def simple_interest(p, r, t):
-    return (p * r * t) / 100
+def count_vowels(text):
+    count = 0
+    for ch in text.lower():
+        if ch in "aeiou":
+            count += 1
+    return count
 
-p = float(input("Principal: "))
-r = float(input("Rate: "))
-t = float(input("Time: "))
-
-print("Simple Interest:", simple_interest(p, r, t))
+text = input("Enter text: ")
+print("Vowels:", count_vowels(text))

@@ -1,4 +1,9 @@
-num = int(input("Enter number: "))
+def main():
+    text = input("Enter text: ")
 
-for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
+    result = text.replace(" ", "")
+
+    print("Without spaces:", result)
+
+if __name__ == "__main__":
+    main()

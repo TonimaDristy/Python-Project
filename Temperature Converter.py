@@ -1,9 +1,10 @@
 def main():
-    text = input("Enter text: ")
+    list1 = list(map(int, input("Enter first list: ").split()))
+    list2 = list(map(int, input("Enter second list: ").split()))
 
-    result = text.replace(" ", "")
+    common = list(set(list1) & set(list2))
 
-    print("Without spaces:", result)
+    print("Common elements:", common)
 
 if __name__ == "__main__":
     main()
